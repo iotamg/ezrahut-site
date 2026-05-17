@@ -1,3 +1,10 @@
+<div align="center">
+  <a href="https://iotamg.github.io/ezrahut-site/">
+    <img src="button.png" alt="לאתר" width="300">
+  </a>
+</div>
+
+
 ## בניה לא חוקית של בדואים
 
 ## עבודת חקר באזרחות
