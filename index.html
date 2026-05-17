@@ -7,13 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@300;400;700;900&family=Heebo:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --black: #0a0a0a;
-    --sand: #c8b89a;
-    --sand-light: #e8ddd0;
-    --rust: #b85c38;
-    --rust-dark: #8b3a1f;
-    --cream: #f5f0e8;
-    --text: #1a1a1a;
+    --black: #0a1128;
+    --sand: #60a5fa;
+    --sand-light: #dbeafe;
+    --rust: #2563eb;
+    --rust-dark: #1e40af;
+    --cream: #f8fafc;
+    --text: #0f172a;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,25 +26,6 @@
 }
 
   /* HERO */
-  .research-btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.8rem 2rem;
-  background: var(--rust);
-  color: white;
-  text-decoration: none;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(184, 92, 56, 0.4);
-}
-.research-btn:hover {
-  background: var(--rust-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(184, 92, 56, 0.6);
-}
   .hero {
     position: relative;
     height: 100vh;
@@ -74,7 +55,7 @@
   }
 
   .hero h1 {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: clamp(2.5rem, 7vw, 5rem);
     font-weight: 900;
     line-height: 1.1;
@@ -138,7 +119,7 @@
   }
 
   h2 {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 700;
     line-height: 1.2;
@@ -178,7 +159,7 @@
   }
 
   .stat-num {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--sand);
@@ -272,7 +253,7 @@
   }
 
   .concept-card h3 {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
@@ -299,7 +280,7 @@
   }
 
   blockquote {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: clamp(1.4rem, 3vw, 2rem);
     font-weight: 300;
     line-height: 1.5;
@@ -335,7 +316,7 @@
   }
 
   .solution-box h3 {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 1.6rem;
     color: var(--rust-dark);
     margin-bottom: 1rem;
@@ -361,7 +342,7 @@
   }
 
   .findings-card h3 {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: var(--black);
@@ -421,7 +402,6 @@
   <div class="hero-content">
     <div class="hero-badge">עבודה באזרחות · 2026</div>
     <h1>בנייה לא חוקית <br><span>של בדואים בנגב</span></h1>
-    <a id="research-link" href="#" target="_blank" class="research-btn">עבודת המחקר שלנו</a>
 
   </div>
   <div class="scroll-hint">גלול למטה ↓</div>
@@ -591,16 +571,5 @@
   <p style="margin-top:0.5rem">תיכון רמת הנגב · 2026</p>
 </footer>
 
-  <script>
-  fetch('link.txt')
-    .then(response => response.text())
-    .then(url => {
-      const cleanUrl = url.trim();
-      if(cleanUrl) {
-        document.getElementById('research-link').href = cleanUrl;
-      }
-    })
-    .catch(error => console.error('Error fetching link:', error));
-</script>
 </body>
 </html>
