@@ -26,6 +26,25 @@
 }
 
   /* HERO */
+  .research-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: var(--rust);
+  color: white;
+  text-decoration: none;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(184, 92, 56, 0.4);
+}
+.research-btn:hover {
+  background: var(--rust-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 92, 56, 0.6);
+}
   .hero {
     position: relative;
     height: 100vh;
@@ -402,6 +421,7 @@
   <div class="hero-content">
     <div class="hero-badge">עבודה באזרחות · 2026</div>
     <h1>בנייה לא חוקית <br><span>של בדואים בנגב</span></h1>
+    <a id="research-link" href="#" target="_blank" class="research-btn">עבודת המחקר שלנו</a>
 
   </div>
   <div class="scroll-hint">גלול למטה ↓</div>
@@ -571,5 +591,16 @@
   <p style="margin-top:0.5rem">תיכון רמת הנגב · 2026</p>
 </footer>
 
+  <script>
+  fetch('link.txt')
+    .then(response => response.text())
+    .then(url => {
+      const cleanUrl = url.trim();
+      if(cleanUrl) {
+        document.getElementById('research-link').href = cleanUrl;
+      }
+    })
+    .catch(error => console.error('Error fetching link:', error));
+</script>
 </body>
 </html>
