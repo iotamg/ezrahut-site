@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://iotamg.github.io/ezrahut-site/">
-    <img src="site-button.png" alt="לאתר" width="600">
+    <img src="s-b.png" alt="לאתר" width="600">
   </a>
 </div>
 
